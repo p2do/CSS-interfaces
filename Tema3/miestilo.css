@@ -1,0 +1,83 @@
+.a {
+  float: left;
+  padding: 10px;
+}
+.a div{
+  height: 100px;
+  width: 100px; 
+  background-color: red;
+}
+.clear{
+    clear: both;
+}
+.b {
+  float: right;
+  padding: 10px;
+}
+.b div{
+  height: 100px;
+  width: 100px; 
+  background-color: green;
+}
+.c {
+  float: left;
+  padding: 10px;
+}
+.c div{
+  height: 100px;
+  width: 100px; 
+  background-color: blue;
+}
+.d {
+  clear: both;
+  float: left; /* Cambia este valor a float:left, float:right para ver resultados */
+  padding: 10px;
+}
+.d div{
+  height: 100px;
+  width: 100px; 
+  background-color: purple;
+}
+
+/*
+.a {
+  float: left;
+  padding: 10px;
+}
+.a div{
+  height: 100px;
+  width: 100px; 
+  background-color: red;
+}
+.clear{
+    clear: both;
+}
+.b {
+  float: right;
+  padding: 10px;
+}
+.b div{
+  height: 100px;
+  width: 100px; 
+  background-color: green;
+}
+.c {
+  float: left;
+  padding: 10px;
+}
+.c div{
+  height: 100px;
+  width: 100px; 
+  background-color: blue;
+}
+.d {
+  clear: both;
+  float: left; /* Cambia este valor a float:left, float:right para ver resultados 
+  padding: 10px;
+}
+.d div{
+  height: 100px;
+  width: 100px; 
+  background-color: purple;
+}
+*/

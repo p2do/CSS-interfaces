@@ -1,0 +1,32 @@
+body {
+    display: flex;
+    height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.9em;
+}
+
+.lateralcontent {
+    background-color: aqua;
+    padding: 12px 24px 12px 24px;
+    flex: 1 1 20%;
+
+}
+
+.block {
+    border-bottom: 1px solid black;
+    margin-top: 10%;
+    padding-bottom: 5%;
+    margin-bottom: 8%;
+    padding-left: 5%;
+}
+
+.espacio {
+    width: 2px;
+}
+
+.principalcontent {
+    background-color: chartreuse;
+    padding: 12px 24px 12px 24px;
+    flex: 4 4 70%;
+
+}

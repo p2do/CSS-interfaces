@@ -1,0 +1,58 @@
+
+
+body{
+  display: grid;
+  grid-template-columns: repeat(12, 50px);
+  grid-template-rows: repeat(6, 50px);
+  row-gap: 10px;
+  column-gap: 10px;
+  
+}
+
+.amarillo{
+  background-color: yellow;
+  width: 100%;
+  height: 100%;
+  grid-column-start: span 1;
+  grid-row: 1/2;
+}
+
+.lima{
+  background-color: lime;
+  width: 100%;
+  height: 100%;
+  grid-column-start: span 2;
+  grid-row: 2/3;
+}
+
+.verde-agua{
+  background-color: rgb(39, 182, 149);
+  width: 100%;
+  height: 100%;
+  grid-column-start: span 3;
+  grid-row: 3/4;
+}
+
+.verde{
+  background-color: green;
+  width: 100%;
+  height: 100%;
+  grid-column-start: span 4;
+  grid-row: 4/5;
+}
+
+.morado{
+  background-color: purple;
+  width: 100%;
+  height: 100%;
+  grid-column-start: span 6;
+  grid-row: 5/6;
+}
+
+.rosa{
+  background-color: rgb(230, 91, 114);
+  width: 100%;
+  height: 100%;
+  grid-column-start: span 12;
+  grid-row: 6/7;
+}

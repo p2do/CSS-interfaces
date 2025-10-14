@@ -1,0 +1,28 @@
+body{
+  display: grid;
+  grid-template-columns: repeat(2, 200px);
+  grid-template-rows: repeat(2,200px);
+  row-gap: 10px;
+  column-gap: 10px;
+}
+
+.amarillo{
+  background-color: yellow;
+  grid-row: 1/2;
+  grid-column: 1/span 2;
+  
+}
+
+.lima{
+  background-color: limegreen;
+  grid-row: 2/3;
+  grid-column-start: 1/2;
+}
+
+.morado{
+  background-color: purple;
+  grid-row: 2/3;
+  grid-column-start: 1/2;
+}
+
+

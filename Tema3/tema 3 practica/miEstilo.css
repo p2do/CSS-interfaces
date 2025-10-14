@@ -1,0 +1,40 @@
+header {
+  background-color: rgb(162, 190, 241);
+  display:flex;
+  justify-content: space-between;
+}
+
+
+img {
+  width: 60px;
+  height: 60px;
+}
+
+.left-header{
+  flex-wrap: nowrap;
+}
+
+section{
+  flex-direction: row;
+
+}
+
+#classImg{
+  width: 60%;
+  height: 60%;
+  flex: 4 4 60%;
+  flex-wrap: nowrap;
+
+}
+
+#firstTitle{
+align-self: flex-start;
+}
+
+
+
+@media all and (max-width: 640px) {
+#classImg article .firstTitle{
+    max-width: 100%;  
+}
+}
