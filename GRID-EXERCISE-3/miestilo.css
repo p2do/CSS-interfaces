@@ -1,43 +1,88 @@
+body{
+    padding: 0px;
+  margin: 0px;
+}
 
-.contenedor{
+.contenedor {
   display: grid;
+  height: 100vh;
   grid-template-columns: 20% 1fr 20%;
   grid-template-rows: 100px 1fr 1fr 1fr 100px;
-  grid-template-areas:  "header header header"
-                        "nav cuerpo foto1"
-                        "nav cuerpo ."
-                        "nav cuerpo foto2"
-                        "copys . fecha";
+  grid-template-areas: "header header header"
+    "nav cuerpo foto1"
+    "nav cuerpo ."
+    "nav cuerpo foto2"
+    "copys . fecha";
 }
 
-.cuerpo{
+.cuerpo {
   background-color: beige;
-  grid-area:cuerpo;
+  grid-area: cuerpo;
 }
-header{
+
+header {
   background-color: brown;
-  grid-area:header;
+  grid-area: header;
 }
-nav{
-  grid-area:nav;
+
+header h1 {
+  justify-self: center;
+}
+
+nav {
+  grid-area: nav;
   background-color: blanchedalmond;
+  justify-items: center;
+  align-content: center;
+  height: 100%;
+  
+
 }
-.foto1{
-  grid-area:foto1;
+
+.foto1 {
+  grid-area: foto1;
   background-color: burlywood;
 }
-.foto2{
-  grid-area:foto2;
+
+.foto2 {
+  grid-area: foto2;
   background-color: cadetblue;
 }
 
-.copy{
-  grid-area:copys;
+.copy {
+  grid-area: copys;
   background-color: rgb(5, 95, 98);
 }
 
-.fecha{
-  grid-area:fecha;
+.fecha {
+  grid-area: fecha;
   background-color: rgb(30, 46, 46);
+
 }
 
+@media all and (max-width:600px) {
+
+  .contenedor {
+    display: grid;
+    grid-template-columns: 25% 1fr 25%;
+    grid-template-rows: 10% 10% 1fr 1fr 15%;
+    grid-template-areas: "header header header"
+                          "nav nav nav"
+                          "cuerpo cuerpo foto1"
+                          "cuerpo cuerpo foto2"
+                          "copys . fecha";
+  }
+
+  ul{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: 100%;
+
+  }
+
+  ul li{
+
+    margin: 20px;
+  }
+
+}
