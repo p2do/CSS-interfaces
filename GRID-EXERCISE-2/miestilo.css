@@ -1,28 +1,29 @@
 body{
   display: grid;
-  grid-template-columns: repeat(2, 200px);
-  grid-template-rows: repeat(2,200px);
+  grid-template-columns: repeat(3, 200px);
+  grid-template-rows: repeat(3,200px);
   row-gap: 10px;
   column-gap: 10px;
+  grid-template-areas: "numero1 . numero3"
+  "numero1 numero2 numero3"
+  ". numero2 .";
+
 }
 
 .amarillo{
-  background-color: yellow;
-  grid-row: 1/2;
-  grid-column: 1/span 2;
+grid-area:numero1;
+background-color: yellow;
   
 }
 
 .lima{
   background-color: limegreen;
-  grid-row: 2/3;
-  grid-column-start: 1/2;
+  grid-area:numero2;
 }
 
 .morado{
   background-color: purple;
-  grid-row: 2/3;
-  grid-column-start: 1/2;
+  grid-area:numero3;
 }
 
 

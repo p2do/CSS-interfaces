@@ -1,0 +1,43 @@
+
+.contenedor{
+  display: grid;
+  grid-template-columns: 20% 1fr 20%;
+  grid-template-rows: 100px 1fr 1fr 1fr 100px;
+  grid-template-areas:  "header header header"
+                        "nav cuerpo foto1"
+                        "nav cuerpo ."
+                        "nav cuerpo foto2"
+                        "copys . fecha";
+}
+
+.cuerpo{
+  background-color: beige;
+  grid-area:cuerpo;
+}
+header{
+  background-color: brown;
+  grid-area:header;
+}
+nav{
+  grid-area:nav;
+  background-color: blanchedalmond;
+}
+.foto1{
+  grid-area:foto1;
+  background-color: burlywood;
+}
+.foto2{
+  grid-area:foto2;
+  background-color: cadetblue;
+}
+
+.copy{
+  grid-area:copys;
+  background-color: rgb(5, 95, 98);
+}
+
+.fecha{
+  grid-area:fecha;
+  background-color: rgb(30, 46, 46);
+}
+
